@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DescribeAddressesResponse xmlns="http://ec2.amazonaws.com/doc/2012-12-01/">
+    <requestId>f7de5e98-491a-4c19-a92d-908d6EXAMPLE</requestId>
+    <addressesSet>
+        <item>
+            <publicIp>46.51.223.41</publicIp>
+            <allocationId>eipalloc-08229861</allocationId>
+            <domain>vpc</domain>
+            <instanceId>i-64600030</instanceId>
+            <associationId>eipassoc-f0229899</associationId>
+            <networkInterfaceId>eni-ef229886</networkInterfaceId>
+            <networkInterfaceOwnerId>053230519467</networkInterfaceOwnerId>
+            <privateIpAddress>10.0.0.228</privateIpAddress>
+        </item>
+    </addressesSet>
+</DescribeAddressesResponse>

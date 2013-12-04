@@ -1,0 +1,33 @@
+.x-grid-role-scripting .x-grid-dirty-cell{
+    background-image: url("/ui2/js/extjs-4.1/theme/images/grid/dirty.gif") !important;
+    background-position: 0 0 !important;
+    background-repeat: no-repeat !important;
+}
+
+.x-grid-role-scripting .x-grid-row-system{
+	color:#999;
+}
+
+.x-grid-role-scripting .x-grid-cell-special .x-grid-cell-inner{
+	position:absolute;
+	margin-top: -3px;
+}
+
+.x-boundlist-role-scripting-events li{
+	padding: 5px 3px;
+	height: 26px;
+}
+
+.x-grid-role-scripting .x-grid-rowbody{
+	font-size: 12px;
+	line-height:14px;
+}
+
+.x-grid-role-scripting .x-grid-empty{
+    padding-top:2px;
+}
+
+.x-grid-role-scripting .x-grid-empty img{
+    position:relative;
+    top:5px;
+}

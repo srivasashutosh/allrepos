@@ -1,0 +1,161 @@
+/*fieldset*/
+.scalr-ui-dbmsrstatus-panel .x-fieldset-with-toggle .x-fieldset-header:hover{
+	background:transparent;
+}
+
+.scalr-ui-dbmsrstatus-panel .x-fieldset-with-toggle .x-fieldset .x-fieldset-header{
+	padding-left: 32px;
+}
+.x-dbmsclustermapfield-container .x-fieldset{
+	border-radius:0;
+}
+
+
+/*increase storage size btn*/
+.scalr-ui-dbmsr-status-increase .x-btn-inner {
+    background:transparent url("/ui2/images/ui/db/increase.png") 0 1px no-repeat;
+    height: 22px;
+}
+
+/*inprogress indicator*/
+.scalr-ui-dbmsr-status-inprogress{
+	background:transparent url("/ui2/images/ui/db/backup_progress.gif") 0 0 no-repeat;
+	color:#fff;
+	font-weight:bold;
+	line-height:24px;
+	text-align:center;
+	font-size:13px;
+}
+
+/*button stop*/
+.scalr-ui-dbmsr-status-stop{
+	background:transparent;
+	box-shadow:none;
+}
+
+.scalr-ui-dbmsr-status-stop .x-btn-inner{
+	background:transparent url("/ui2/images/ui/db/stop_backup_sprite.png") 0 0 no-repeat;
+	width:30px;
+	height:26px;
+}
+
+.x-btn-base-image-background-over.scalr-ui-dbmsr-status-stop .x-btn-inner{
+	background-position:0 -26px;
+}
+
+/*dump/snapshot history field*/
+.x-form-dbmshistory-field{
+	height:18px;
+	overflow:hidden;
+}
+
+.x-form-dbmshistory-field .item{
+	height: 18px;
+	width: 22px;
+	background: #72BB61;
+	float:left;
+	border-radius: 3px;
+	margin-right:17px;
+}
+
+.x-form-dbmshistory-field .failed{
+	background: #EA5535;
+}
+
+/*cluster map*/
+.x-dbmsclustermapfield-container{
+	background: #E6E8EC;
+	border-radius: 4px;
+}
+
+.x-dbmsclustermapfield-btn{
+	background: #fff;
+	box-shadow: 0 -1px 1px #8297AC inset, 0 -1px #A6B5C4 inset;
+	-webkit-box-shadow: 0 -1px 2px #8297AC inset, 0 -1px #A6B5C4 inset; 
+	border-radius: 4px;
+	overflow:hidden;
+}
+
+.x-dbmsclustermapfield-btn.x-btn-custom-disabled{
+    cursor: default;
+}
+
+.x-dbmsclustermapfield-btn-over{
+	background: #F2F3F4;
+}
+
+.x-dbmsclustermapfield-btn-pressed{
+	background: #C9D1DA;
+	box-shadow: 0 1px 2px #242D35 inset, 0 1px 1px white;
+	-webkit-box-shadow: 0 1px 3px #242D35 inset, 0 1px 1px white;
+}
+
+.x-dbmsclustermapfield-btn{
+	text-align:center;
+	position:relative;
+	cursor: pointer;
+}
+
+.x-dbmsclustermapfield-inner{
+	padding: 5px 10px;
+	line-height: 23px;
+	font-size: 13px;
+	color: #666666;
+	height:100%;
+}
+
+.x-dbmsclustermapfield-btn .title{
+	font-weight: bold;
+	color: #0055CC;
+}
+
+.x-dbmsclustermapfield-btn .status{
+	font-weight:bold;
+	color:#000;
+}
+
+.x-dbmsclustermapfield-slave .status{
+	position:absolute;
+	bottom:0;
+	left:0;
+	border-radius: 0 0 4px 4px;
+	width: 100%;
+	height: 26px;
+	background: #56AB2E;
+	font: bold 13px/26px arial, helvetica, sans-serif;
+	color: #fff;
+	box-shadow: 0 -1px 2px #666 inset;
+	-webkit-box-shadow: 0 -1px 2px #666 inset;
+}
+
+.x-dbmsclustermapfield-slave .status-broken{
+	background: #EE3711;
+}
+
+.x-dbmsclustermapfield-slave .status-lagging{
+	background: #FEA716;
+}
+
+.x-dbmsclustermapfield-slave .status-error{
+	background: #999;
+}
+
+.x-dbmsclustermapfield-add{
+    border: 2px dashed #A9BCD8;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.x-dbmsclustermapfield-add .x-dbmsclustermapfield-inner{
+	padding:0;
+	font: bold 13px/90px arial, helvetica, sans-serif;
+	color:#4A5E82;
+	height:100%;
+	text-align:center;
+}
+
+/*charts preview*/
+.scalr-ui-dbmschart{
+	cursor: pointer;
+}

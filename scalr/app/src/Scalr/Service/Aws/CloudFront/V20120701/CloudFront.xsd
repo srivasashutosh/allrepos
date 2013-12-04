@@ -1,0 +1,464 @@
+<xs:schema
+  targetNamespace="http://cloudfront.amazonaws.com/doc/2012-07-01/"
+  xmlns:tns="http://cloudfront.amazonaws.com/doc/2012-07-01/"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified">
+
+  <xs:element name="ActiveTrustedSigners" type="tns:ActiveTrustedSigners"/>
+  <xs:complexType name="ActiveTrustedSigners">
+    <xs:sequence>
+      <xs:element name="Enabled" type="xs:boolean"/>
+      <xs:element name="Quantity" type="xs:integer"/>
+      <xs:element name="Items" type="tns:SignerList" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AliasList">
+    <xs:sequence>
+      <xs:element name="CNAME" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="Aliases" type="tns:Aliases"/>
+  <xs:complexType name="Aliases">
+    <xs:sequence>
+      <xs:element name="Quantity" type="xs:integer"/>
+      <xs:element name="Items" type="tns:AliasList" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AwsAccountNumberList">
+    <xs:sequence>
+      <xs:element name="AwsAccountNumber" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="CacheBehavior" type="tns:CacheBehavior"/>
+  <xs:complexType name="CacheBehavior">
+    <xs:sequence>
+      <xs:element name="PathPattern" type="xs:string"/>
+      <xs:element name="TargetOriginId" type="xs:string"/>
+      <xs:element name="ForwardedValues" type="tns:ForwardedValues"/>
+      <xs:element name="TrustedSigners" type="tns:TrustedSigners"/>
+      <xs:element name="ViewerProtocolPolicy" type="tns:ViewerProtocolPolicy"/>
+      <xs:element name="MinTTL" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CacheBehaviorList">
+    <xs:sequence>
+      <xs:element name="CacheBehavior" type="tns:CacheBehavior" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="CacheBehaviors" type="tns:CacheBehaviors"/>
+  <xs:complexType name="CacheBehaviors">
+    <xs:sequence>
+      <xs:element name="Quantity" type="xs:integer"/>
+      <xs:element name="Items" type="tns:CacheBehaviorList" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="CloudFrontOriginAccessIdentity" type="tns:CloudFrontOriginAccessIdentity"/>
+  <xs:complexType name="CloudFrontOriginAccessIdentity">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:string"/>
+      <xs:element name="S3CanonicalUserId" type="xs:string"/>
+      <xs:element name="CloudFrontOriginAccessIdentityConfig" type="tns:CloudFrontOriginAccessIdentityConfig" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="CloudFrontOriginAccessIdentityConfig" type="tns:CloudFrontOriginAccessIdentityConfig"/>
+  <xs:complexType name="CloudFrontOriginAccessIdentityConfig">
+    <xs:sequence>
+      <xs:element name="CallerReference" type="xs:string"/>
+      <xs:element name="Comment" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="CloudFrontOriginAccessIdentityList" type="tns:CloudFrontOriginAccessIdentityList"/>
+  <xs:complexType name="CloudFrontOriginAccessIdentityList">
+    <xs:sequence>
+      <xs:element name="Marker" type="xs:string"/>
+      <xs:element name="NextMarker" type="xs:string" minOccurs="0"/>
+      <xs:element name="MaxItems" type="xs:integer"/>
+      <xs:element name="IsTruncated" type="xs:boolean"/>
+      <xs:element name="Quantity" type="xs:integer"/>
+      <xs:element name="Items" type="tns:CloudFrontOriginAccessIdentitySummaryList" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="CloudFrontOriginAccessIdentitySummary" type="tns:CloudFrontOriginAccessIdentitySummary"/>
+  <xs:complexType name="CloudFrontOriginAccessIdentitySummary">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:string"/>
+      <xs:element name="S3CanonicalUserId" type="xs:string"/>
+      <xs:element name="Comment" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CloudFrontOriginAccessIdentitySummaryList">
+    <xs:sequence>
+      <xs:element name="CloudFrontOriginAccessIdentitySummary" type="tns:CloudFrontOriginAccessIdentitySummary" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CookieNameList">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="CookieNames" type="tns:CookieNames"/>
+  <xs:complexType name="CookieNames">
+    <xs:sequence>
+      <xs:element name="Quantity" type="xs:integer"/>
+      <xs:element name="Items" type="tns:CookieNameList" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="CookiePreference" type="tns:CookiePreference"/>
+  <xs:complexType name="CookiePreference">
+    <xs:sequence>
+      <xs:element name="Forward" type="tns:ItemSelection"/>
+      <xs:element name="WhitelistedNames" type="tns:CookieNames" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="CustomOriginConfig" type="tns:CustomOriginConfig"/>
+  <xs:complexType name="CustomOriginConfig">
+    <xs:sequence>
+      <xs:element name="HTTPPort" type="xs:integer"/>
+      <xs:element name="HTTPSPort" type="xs:integer"/>
+      <xs:element name="OriginProtocolPolicy" type="tns:OriginProtocolPolicy"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="DefaultCacheBehavior" type="tns:DefaultCacheBehavior"/>
+  <xs:complexType name="DefaultCacheBehavior">
+    <xs:sequence>
+      <xs:element name="TargetOriginId" type="xs:string"/>
+      <xs:element name="ForwardedValues" type="tns:ForwardedValues"/>
+      <xs:element name="TrustedSigners" type="tns:TrustedSigners"/>
+      <xs:element name="ViewerProtocolPolicy" type="tns:ViewerProtocolPolicy"/>
+      <xs:element name="MinTTL" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="Distribution" type="tns:Distribution"/>
+  <xs:complexType name="Distribution">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:string"/>
+      <xs:element name="Status" type="xs:string"/>
+      <xs:element name="LastModifiedTime" type="xs:dateTime"/>
+      <xs:element name="InProgressInvalidationBatches" type="xs:integer"/>
+      <xs:element name="DomainName" type="xs:string"/>
+      <xs:element name="ActiveTrustedSigners" type="tns:ActiveTrustedSigners"/>
+      <xs:element name="DistributionConfig" type="tns:DistributionConfig"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="DistributionConfig" type="tns:DistributionConfig"/>
+  <xs:complexType name="DistributionConfig">
+    <xs:sequence>
+      <xs:element name="CallerReference" type="xs:string"/>
+      <xs:element name="Aliases" type="tns:Aliases"/>
+      <xs:element name="DefaultRootObject" type="xs:string"/>
+      <xs:element name="Origins" type="tns:Origins"/>
+      <xs:element name="DefaultCacheBehavior" type="tns:DefaultCacheBehavior"/>
+      <xs:element name="CacheBehaviors" type="tns:CacheBehaviors"/>
+      <xs:element name="Comment" type="xs:string"/>
+      <xs:element name="Logging" type="tns:LoggingConfig"/>
+      <xs:element name="PriceClass" type="tns:PriceClass"/>
+      <xs:element name="Enabled" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="DistributionList" type="tns:DistributionList"/>
+  <xs:complexType name="DistributionList">
+    <xs:sequence>
+      <xs:element name="Marker" type="xs:string"/>
+      <xs:element name="NextMarker" type="xs:string" minOccurs="0"/>
+      <xs:element name="MaxItems" type="xs:integer"/>
+      <xs:element name="IsTruncated" type="xs:boolean"/>
+      <xs:element name="Quantity" type="xs:integer"/>
+      <xs:element name="Items" type="tns:DistributionSummaryList" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="DistributionSummary" type="tns:DistributionSummary"/>
+  <xs:complexType name="DistributionSummary">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:string"/>
+      <xs:element name="Status" type="xs:string"/>
+      <xs:element name="LastModifiedTime" type="xs:dateTime"/>
+      <xs:element name="DomainName" type="xs:string"/>
+      <xs:element name="Aliases" type="tns:Aliases"/>
+      <xs:element name="Origins" type="tns:Origins"/>
+      <xs:element name="DefaultCacheBehavior" type="tns:DefaultCacheBehavior"/>
+      <xs:element name="CacheBehaviors" type="tns:CacheBehaviors"/>
+      <xs:element name="Comment" type="xs:string"/>
+      <xs:element name="PriceClass" type="tns:PriceClass"/>
+      <xs:element name="Enabled" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DistributionSummaryList">
+    <xs:sequence>
+      <xs:element name="DistributionSummary" type="tns:DistributionSummary" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="ForwardedValues" type="tns:ForwardedValues"/>
+  <xs:complexType name="ForwardedValues">
+    <xs:sequence>
+      <xs:element name="QueryString" type="xs:boolean"/>
+      <xs:element name="Cookies" type="tns:CookiePreference"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="Invalidation" type="tns:Invalidation"/>
+  <xs:complexType name="Invalidation">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:string"/>
+      <xs:element name="Status" type="xs:string"/>
+      <xs:element name="CreateTime" type="xs:dateTime"/>
+      <xs:element name="InvalidationBatch" type="tns:InvalidationBatch"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="InvalidationBatch" type="tns:InvalidationBatch"/>
+  <xs:complexType name="InvalidationBatch">
+    <xs:sequence>
+      <xs:element name="Paths" type="tns:Paths"/>
+      <xs:element name="CallerReference" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="InvalidationList" type="tns:InvalidationList"/>
+  <xs:complexType name="InvalidationList">
+    <xs:sequence>
+      <xs:element name="Marker" type="xs:string"/>
+      <xs:element name="NextMarker" type="xs:string" minOccurs="0"/>
+      <xs:element name="MaxItems" type="xs:integer"/>
+      <xs:element name="IsTruncated" type="xs:boolean"/>
+      <xs:element name="Quantity" type="xs:integer"/>
+      <xs:element name="Items" type="tns:InvalidationSummaryList" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="InvalidationSummary" type="tns:InvalidationSummary"/>
+  <xs:complexType name="InvalidationSummary">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:string"/>
+      <xs:element name="CreateTime" type="xs:dateTime"/>
+      <xs:element name="Status" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvalidationSummaryList">
+    <xs:sequence>
+      <xs:element name="InvalidationSummary" type="tns:InvalidationSummary" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="ItemSelection">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="none"/>
+      <xs:enumeration value="whitelist"/>
+      <xs:enumeration value="all"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="KeyPairIdList">
+    <xs:sequence>
+      <xs:element name="KeyPairId" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="KeyPairIds" type="tns:KeyPairIds"/>
+  <xs:complexType name="KeyPairIds">
+    <xs:sequence>
+      <xs:element name="Quantity" type="xs:integer"/>
+      <xs:element name="Items" type="tns:KeyPairIdList" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="LoggingConfig" type="tns:LoggingConfig"/>
+  <xs:complexType name="LoggingConfig">
+    <xs:sequence>
+      <xs:element name="Enabled" type="xs:boolean"/>
+      <xs:element name="IncludeCookies" type="xs:boolean"/>
+      <xs:element name="Bucket" type="xs:string"/>
+      <xs:element name="Prefix" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="Origin" type="tns:Origin"/>
+  <xs:complexType name="Origin">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:string"/>
+      <xs:element name="DomainName" type="xs:string"/>
+      <xs:element name="S3OriginConfig" type="tns:S3OriginConfig" minOccurs="0"/>
+      <xs:element name="CustomOriginConfig" type="tns:CustomOriginConfig" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="OriginList">
+    <xs:sequence>
+      <xs:element name="Origin" type="tns:Origin" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="OriginProtocolPolicy">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="http-only"/>
+      <xs:enumeration value="match-viewer"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="Origins" type="tns:Origins"/>
+  <xs:complexType name="Origins">
+    <xs:sequence>
+      <xs:element name="Quantity" type="xs:integer"/>
+      <xs:element name="Items" type="tns:OriginList" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PathList">
+    <xs:sequence>
+      <xs:element name="Path" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="Paths" type="tns:Paths"/>
+  <xs:complexType name="Paths">
+    <xs:sequence>
+      <xs:element name="Quantity" type="xs:integer"/>
+      <xs:element name="Items" type="tns:PathList" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="PriceClass">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PriceClass_100"/>
+      <xs:enumeration value="PriceClass_200"/>
+      <xs:enumeration value="PriceClass_All"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="S3Origin" type="tns:S3Origin"/>
+  <xs:complexType name="S3Origin">
+    <xs:sequence>
+      <xs:element name="DomainName" type="xs:string"/>
+      <xs:element name="OriginAccessIdentity" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="S3OriginConfig" type="tns:S3OriginConfig"/>
+  <xs:complexType name="S3OriginConfig">
+    <xs:sequence>
+      <xs:element name="OriginAccessIdentity" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="Signer" type="tns:Signer"/>
+  <xs:complexType name="Signer">
+    <xs:sequence>
+      <xs:element name="AwsAccountNumber" type="xs:string" minOccurs="0"/>
+      <xs:element name="KeyPairIds" type="tns:KeyPairIds" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SignerList">
+    <xs:sequence>
+      <xs:element name="Signer" type="tns:Signer" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="StreamingDistribution" type="tns:StreamingDistribution"/>
+  <xs:complexType name="StreamingDistribution">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:string"/>
+      <xs:element name="Status" type="xs:string"/>
+      <xs:element name="LastModifiedTime" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="DomainName" type="xs:string"/>
+      <xs:element name="ActiveTrustedSigners" type="tns:ActiveTrustedSigners"/>
+      <xs:element name="StreamingDistributionConfig" type="tns:StreamingDistributionConfig"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="StreamingDistributionConfig" type="tns:StreamingDistributionConfig"/>
+  <xs:complexType name="StreamingDistributionConfig">
+    <xs:sequence>
+      <xs:element name="CallerReference" type="xs:string"/>
+      <xs:element name="S3Origin" type="tns:S3Origin"/>
+      <xs:element name="Aliases" type="tns:Aliases"/>
+      <xs:element name="Comment" type="xs:string"/>
+      <xs:element name="Logging" type="tns:StreamingLoggingConfig"/>
+      <xs:element name="TrustedSigners" type="tns:TrustedSigners"/>
+      <xs:element name="PriceClass" type="tns:PriceClass"/>
+      <xs:element name="Enabled" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="StreamingDistributionList" type="tns:StreamingDistributionList"/>
+  <xs:complexType name="StreamingDistributionList">
+    <xs:sequence>
+      <xs:element name="Marker" type="xs:string"/>
+      <xs:element name="NextMarker" type="xs:string" minOccurs="0"/>
+      <xs:element name="MaxItems" type="xs:integer"/>
+      <xs:element name="IsTruncated" type="xs:boolean"/>
+      <xs:element name="Quantity" type="xs:integer"/>
+      <xs:element name="Items" type="tns:StreamingDistributionSummaryList" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="StreamingDistributionSummary" type="tns:StreamingDistributionSummary"/>
+  <xs:complexType name="StreamingDistributionSummary">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:string"/>
+      <xs:element name="Status" type="xs:string"/>
+      <xs:element name="LastModifiedTime" type="xs:dateTime"/>
+      <xs:element name="DomainName" type="xs:string"/>
+      <xs:element name="S3Origin" type="tns:S3Origin"/>
+      <xs:element name="Aliases" type="tns:Aliases"/>
+      <xs:element name="TrustedSigners" type="tns:TrustedSigners"/>
+      <xs:element name="Comment" type="xs:string"/>
+      <xs:element name="PriceClass" type="tns:PriceClass"/>
+      <xs:element name="Enabled" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="StreamingDistributionSummaryList">
+    <xs:sequence>
+      <xs:element name="StreamingDistributionSummary" type="tns:StreamingDistributionSummary" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="StreamingLoggingConfig" type="tns:StreamingLoggingConfig"/>
+  <xs:complexType name="StreamingLoggingConfig">
+    <xs:sequence>
+      <xs:element name="Enabled" type="xs:boolean"/>
+      <xs:element name="Bucket" type="xs:string"/>
+      <xs:element name="Prefix" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="TrustedSigners" type="tns:TrustedSigners"/>
+  <xs:complexType name="TrustedSigners">
+    <xs:sequence>
+      <xs:element name="Enabled" type="xs:boolean"/>
+      <xs:element name="Quantity" type="xs:integer"/>
+      <xs:element name="Items" type="tns:AwsAccountNumberList" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="ViewerProtocolPolicy">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="allow-all"/>
+      <xs:enumeration value="https-only"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

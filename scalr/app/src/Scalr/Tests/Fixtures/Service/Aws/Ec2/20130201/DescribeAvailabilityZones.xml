@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DescribeAvailabilityZonesResponse xmlns="http://ec2.amazonaws.com/doc/2012-12-01/">
+    <requestId>59dbff89-35bd-4eac-99ed-be587EXAMPLE</requestId>
+    <availabilityZoneInfo>
+        <item>
+            <zoneName>us-east-1a</zoneName>
+            <zoneState>available</zoneState>
+            <regionName>us-east-1</regionName>
+            <messageSet />
+        </item>
+        <item>
+            <zoneName>us-east-1b</zoneName>
+            <zoneState>available</zoneState>
+            <regionName>us-east-1</regionName>
+            <messageSet />
+        </item>
+        <item>
+            <zoneName>us-east-1c</zoneName>
+            <zoneState>available</zoneState>
+            <regionName>us-east-1</regionName>
+            <messageSet />
+        </item>
+        <item>
+            <zoneName>us-east-1d</zoneName>
+            <zoneState>available</zoneState>
+            <regionName>us-east-1</regionName>
+            <messageSet />
+        </item>
+    </availabilityZoneInfo>
+</DescribeAvailabilityZonesResponse>

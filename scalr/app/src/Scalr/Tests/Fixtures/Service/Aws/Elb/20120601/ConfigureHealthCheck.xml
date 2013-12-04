@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConfigureHealthCheckResponse xmlns="http://elasticloadbalancing.amazonaws.com/doc/2012-06-01/">
+  <ConfigureHealthCheckResult>
+    <HealthCheck>
+      <Interval>10</Interval>
+      <Target>TCP:1025</Target>
+      <HealthyThreshold>15</HealthyThreshold>
+      <Timeout>2</Timeout>
+      <UnhealthyThreshold>1</UnhealthyThreshold>
+    </HealthCheck>
+  </ConfigureHealthCheckResult>
+  <ResponseMetadata>
+    <RequestId>ad4834c0-07ed-11e2-bbf7-a7e773bdcd1b</RequestId>
+  </ResponseMetadata>
+</ConfigureHealthCheckResponse>

@@ -1,0 +1,17 @@
+<g:set var="projectSet" value="${[]}"/>
+<g:each in="${projects*.name.sort()}" var="proj">
+    %{
+        projectSet << ['key': proj, 'value': proj]
+    }%
+</g:each>
+<auth:resourceAllowed action="create" kind="project" context="application">
+    <g:if test="${!params.nocreate}">
+        %{
+            projectSet << [value: "Create new Project...", key: '-new-']
+        }%
+    </g:if>
+</auth:resourceAllowed>
+<g:select from="${projectSet}" optionKey='key' optionValue='value' name="${params.key ? params.key : 'projectSelect'}"
+            id="projectSelectInput"
+          onchange="${params.callback ? params.callback : 'selectProject'}(this.value);"
+          value="${params.selected ? params.selected : project}"/>

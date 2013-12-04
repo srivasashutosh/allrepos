@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SetLoadBalancerPoliciesOfListenerResponse xmlns="http://elasticloadbalancing.amazonaws.com/doc/2012-06-01/">
+  <SetLoadBalancerPoliciesOfListenerResult/>    
+  <ResponseMetadata>
+    <RequestId>90f15079-0891-11e2-b66c-d3e9b1511128</RequestId>
+  </ResponseMetadata>
+</SetLoadBalancerPoliciesOfListenerResponse>

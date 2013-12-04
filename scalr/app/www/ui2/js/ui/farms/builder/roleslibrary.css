@@ -1,0 +1,314 @@
+/*shared roles dataview*/
+.scalr-ui-dataview-sharedroles .x-item-inner{
+    padding: 2px;
+}
+
+.scalr-ui-dataview-sharedroles .x-item .name{
+    margin-top:4px;
+}
+
+/*add role form*/
+.scalr-ui-roleslibrary .x-fieldset-body{
+	padding: 0 18px 0 18px;
+}
+
+.scalr-ui-roleslibrary .inner-container{
+    background: #e6e8ec;
+    border-radius: 4px;
+    padding: 18px 18px 8px;
+    margin: 12px 0 0 0;
+}
+
+.scalr-ui-roleslibrary .x-fieldset-with-title .x-fieldset-header-checkbox{
+    margin-left:-12px;
+    margin-top:10px;
+}
+
+/*custom roles grid*/
+.scalr-ui-roleslibrary .scalr-ui-roleslist .x-grid-cell-inner{
+    line-height:26px;
+    padding: 0;
+}
+
+.scalr-ui-roleslibrary .scalr-ui-roleslist .scalr-ui-icon-platform-small,
+.scalr-ui-roleslibrary .scalr-ui-roleslist .scalr-ui-icon-osfamily-small{
+    margin: 0 2px;
+    opacity:.4;
+}
+
+.scalr-ui-roleslibrary .scalr-ui-roleslist .x-grid-row-focused .scalr-ui-icon-platform-small,
+.scalr-ui-roleslibrary .scalr-ui-roleslist .x-grid-row-focused .scalr-ui-icon-osfamily-small,
+.scalr-ui-roleslibrary .scalr-ui-roleslist .x-grid-row-over .scalr-ui-icon-platform-small,
+.scalr-ui-roleslibrary .scalr-ui-roleslist .x-grid-row-over .scalr-ui-icon-osfamily-small{
+    opacity:1;
+}
+
+.scalr-ui-roleslibrary .scalr-ui-roleslist .shared{
+    color:#46A657;
+}
+
+.scalr-ui-roleslibrary .scalr-ui-roleslist .x-grid-row-focused .shared{
+    color:#fff;
+}
+
+/*nothing found text*/
+.scalr-ui-roleslibrary .emptytext{
+    text-align: center;
+    padding: 20px 20px 0;
+}
+
+.scalr-ui-roleslibrary .emptytext .title{
+    font: bold 18px/28px arial;
+    color: #202B3D;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+    margin-bottom: 12px;
+}
+
+.scalr-ui-roleslibrary .x-items-extra{
+    position:relative;
+    margin-left:50%;
+    left:-137px;
+    float:left;
+    width: 300px;
+    height: 130px;
+}
+
+.scalr-ui-roleslibrary .x-items-extra.single{
+    left:-61px;
+}
+
+.scalr-ui-roleslibrary .x-item-extra{
+	background: #fff;
+	border-radius: 4px;
+    box-shadow: 0 -1px 2px #67809C inset,0 -1px 0px #B9C5D2 inset;
+    -webkit-box-shadow: 0 -1px 4px #67809C inset,0 -1px 0px #B9C5D2 inset;
+	cursor: pointer;
+	width:100px;
+	height:100px;
+	text-align:center;
+	float:left;
+	margin:0 10px 10px 0;
+	overflow:hidden;
+    padding:0;
+}
+
+.scalr-ui-roleslibrary .x-item-extra:hover{
+    text-decoration:none;
+    background:#F5F7F8;
+}
+
+.scalr-ui-roleslibrary .x-item-extra .x-item-inner{
+    display: block;
+}
+
+.scalr-ui-roleslibrary .x-item-extra .icon{
+    display: block;
+    margin-bottom: 2px;
+}
+
+.scalr-ui-roleslibrary .x-item-extra .title{
+    font-size:12px;
+    font-weight:normal;
+}
+
+.scalr-ui-roleslibrary .x-item-extra-delimiter{
+    float:left;
+    height: 100px;
+    line-height:100px!important;
+    width: 30px;
+    margin:0 12px 12px 0;
+}
+
+/*roles filter*/
+.scalr-ui-roleslibrary-filter .x-filterfield-btn{
+    background: -webkit-gradient(linear, left top, left bottom, from(#E6E9EE), to(#C5CDD9));
+    background: -moz-linear-gradient(top, #E6E9EE, #C5CDD9);
+    border-radius: 0 3px 3px 0;
+    box-shadow: 0 1px white inset;
+    width: 24px;
+}
+
+.scalr-ui-roleslibrary-filter .x-filterfield-btn:hover{
+    background: -webkit-gradient(linear, left top, left bottom, from(#ECEEF2), to(#CED3DE));
+    background: -moz-linear-gradient(top, #ECEEF2, #CED3DE);    
+}
+
+.scalr-ui-roleslibrary-filter .x-filterfield-btn.disabled{
+    cursor: default;
+    opacity:.6;
+}
+
+.scalr-ui-roleslibrary-filter .x-filterfield-btn-inner{
+    width: 24px;
+    background: url("/ui2/images/ui/farms/roleslibrary/search_all.png") 50% 50% no-repeat;
+}
+
+.scalr-ui-roleslibrary-filter .x-button-text img{
+    vertical-align:top;
+    position:relative;
+    top:2px;
+}
+
+.x-menu-role-cycle-filter .x-menu-item-link{
+    padding:4px 10px 4px 38px;
+}
+
+.x-menu-role-cycle-filter .x-menu-item-checked .x-menu-item-link{
+    background:#D7DBE3;
+}
+
+.x-menu-role-cycle-filter .x-menu-item-icon{
+    left:9px;
+}
+
+.x-menu-role-cycle-filter.x-menu-no-icons .x-menu-item-icon{
+    display:none;
+}
+
+.x-menu-role-cycle-filter.x-menu-no-icons .x-menu-item-link{
+    padding:4px 10px;
+}
+
+
+
+/*proxy settings*/
+.scalr-ui-roleslibrary .x-button-ghost-add .x-btn-inner{
+    margin:0 auto;
+    background: url("/ui2/images/ui/farms/roleslibrary/add_field.png") 50% 50% no-repeat;
+}
+
+.scalr-ui-inlineform{
+    background: #939DAE url("/ui2/images/ui/farms/roleslibrary/1px_shade.png") 0 0 repeat-x;
+    border-radius: 0 0 4px 4px; 
+}
+
+.scalr-ui-inlineform .x-button-add{
+    background:#a3acba;
+    border-radius: 0 0 5px 5px!important;
+    height:45px;
+    box-shadow:none;
+    opacity:.8;
+}
+
+.scalr-ui-inlineform .x-button-add.x-button-icon-over{
+    opacity:1;
+}
+
+.scalr-ui-inlineform .x-button-add .x-btn-inner{
+    margin:0 auto;
+    background: url("/ui2/images/ui/farms/roleslibrary/add_grid_item.png") 50% 50% no-repeat;
+}
+
+
+.scalr-ui-proxy-settings .x-form-item-label{
+    color:#fff;
+    text-shadow: none;
+}
+
+.scalr-ui-proxy-settings .scalr-ui-label-large{
+    color:#fff;
+    text-shadow: 0 -1px #4F596B;
+    font-size:18px;
+    line-height:20px;
+    margin:0 0 0 8px;
+    position:relative;
+    top:-2px;
+}
+
+.scalr-ui-proxy-settings input.x-form-text, .scalr-ui-proxy-settings .x-form-trigger-wrap {
+    box-shadow: none;
+}
+
+.scalr-ui-proxy-rule-backup .x-btn-inner, .scalr-ui-proxy-rule-down .x-btn-inner{
+    background-image: url("/ui2/images/ui/farms/roleslibrary/destination_settings_sprite.png");
+    background-position: 0 0;
+    background-repat: no-repeat;
+}
+
+.scalr-ui-proxy-rule-down .x-btn-inner{
+    background-position: -24px 0;
+}
+
+.scalr-ui-proxy-rule-backup.x-button-icon-pressed .x-btn-inner{
+    background-position: 0 -22px;
+}
+
+.scalr-ui-proxy-rule-down.x-button-icon-pressed .x-btn-inner{
+    background-position: -24px -22px;
+}
+
+.scalr-ui-proxy-settings-container{
+    background:#fff;
+}
+
+.scalr-ui-proxy-settings-container .scalr-ui-rule{
+    padding:12px;
+    background-color:#f4f4f4;
+    /*background-color:#F0F1F4;*/
+}
+
+.scalr-ui-proxy-settings-container .scalr-ui-rule-alt{
+    background-color:#fff;
+}
+
+.scalr-ui-btn-plus .x-btn-inner{
+    background-image: url("/ui2/images/ui/farms/roleslibrary/add_sprite.png");
+    background-position: 0 0;
+    background-repat: no-repeat;
+}
+
+.scalr-ui-btn-plus.x-button-dummy-over .x-btn-inner{
+    background-position: 0 -22px;
+}
+
+.scalr-ui-btn-minus .x-btn-inner{
+    background-image: url("/ui2/images/ui/farms/roleslibrary/remove_sprite.png");
+    background-position: 0 0;
+    background-repat: no-repeat;
+}
+
+.scalr-ui-btn-minus.x-button-dummy-over .x-btn-inner{
+    background-position: 0 -22px;
+}
+
+.scalr-ui-roleslibrary .scalr-ui-cb-readonly .x-form-trigger-wrap{
+    background-color:transparent;
+    box-shadow:none;
+}
+
+.scalr-ui-roleslibrary .scalr-ui-cb-readonly input{
+    color:#666;
+    padding-left: 0;
+}
+
+/*haproxy*/
+.x-button-add-item-big{
+    background:#a3acba;
+    border-radius: 0 0 5px 5px!important;
+    height:45px;
+    box-shadow:none;
+    opacity:.4;
+}
+
+.x-button-add-item-big.x-button-icon-over{
+    opacity:.6;
+}
+
+.x-button-add-item-big .x-btn-inner{
+    margin:0 auto;
+    background: url("/ui2/images/ui/farms/roleslibrary/add_grid_item.png") 50% 50% no-repeat;
+}
+
+.scalr-ui-striped-list{
+    background:#fff;
+}
+
+.scalr-ui-striped-list .item{
+    padding:12px;
+    background-color:#f4f4f4;
+    box-shadow: 0 1px 3px #7b8ba1;
+}
+
+.scalr-ui-striped-list .item-alt{
+    background-color:#fff;
+}

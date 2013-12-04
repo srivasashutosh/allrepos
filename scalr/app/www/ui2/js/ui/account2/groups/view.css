@@ -1,0 +1,65 @@
+.scalr-ui-account-groups .x-dataview-columned table{
+	border-collapse:collapse;
+}
+
+.scalr-ui-account-groups .x-dataview-columned table td{
+	padding:0;
+	vertical-align:top;
+	line-height:20px;
+}
+
+.scalr-ui-account-groups .x-dataview-columned .x-item{
+	position:relative;
+}
+
+.scalr-ui-account-groups .x-dataview-columned .x-item-title{
+	font: bold 18px arial, helvetica, sans-serif;
+	color: #202B3D;
+	text-shadow: 0 1px white;
+	margin-bottom:6px;
+	width: 190px;
+	word-wrap:break-word;
+}
+
+.scalr-ui-account-groups .x-dataview-columned .x-item-param-value{
+	line-height:22px;
+	word-wrap:break-word;
+	max-width:130px;
+}
+
+.scalr-ui-account-groups .x-dataview-columned .x-item-param-title{
+	font-weight:bold;
+	line-height:22px;
+	width:50px;
+}
+
+.scalr-ui-account-groups .scalr-ui-permissions-wrapper .scalr-ui-permission{
+	border-radius: 4px;
+	background:#E6E8EC;
+	box-shadow:none;
+}
+
+.scalr-ui-account-groups .scalr-ui-permissions-wrapper .scalr-ui-permission-expanded{
+	background:#dfe4ea;
+	box-shadow: 0 1px 3px #485B6F, 0 1px #EFF2F5 inset;
+}
+
+.scalr-ui-account-groups .scalr-ui-permissions-wrapper .scalr-ui-permission-dimmed{
+	opacity: .3;
+}
+
+.scalr-ui-account-groups .scalr-ui-permissions-wrapper .scalr-ui-permission-exposed{
+	background:#d5dcea;
+}
+
+.scalr-ui-account-groups .scalr-ui-permissions-wrapper .scalr-ui-permission .x-btn-default-small{
+	font-size:12px;
+}
+
+.scalr-ui-account-groups .scalr-ui-permissions-wrapper .scalr-ui-permission .x-btn-default-small em{
+	margin: 0 5px;
+}
+
+.scalr-ui-account-groups .scalr-ui-permissions-wrapper .x-form-cb-wrap{
+	white-space:nowrap;
+}

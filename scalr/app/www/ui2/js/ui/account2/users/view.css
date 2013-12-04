@@ -1,0 +1,125 @@
+.scalr-ui-account2-edituser-form .x-panel-collapsed{
+	height:0!important;
+	margin-bottom:0!important;
+}
+
+/*access control column*/
+.scalr-ui-account-users .user-permission{
+	font-weight:bold;
+}
+
+.scalr-ui-account-users .x-grid-cell-inner{
+	position:relative;
+}
+
+.scalr-ui-account-users .x-grid-row-options{
+	width:40px;
+	line-height:22px;
+	height:22px;
+	display:none;
+	position:absolute;
+	top:1px;
+	right:5px;
+	background:#eeeeee;
+	box-shadow:none;
+}
+
+.scalr-ui-account-users .x-grid-row-options:hover{
+	background:#eeeeee;
+	box-shadow:none;
+}
+
+.scalr-ui-account-users .x-grid-row-over .x-grid-row-options, .scalr-ui-account-users .x-grid-row-selected .x-grid-row-options{
+	display:block;
+}
+
+.scalr-ui-account-users .x-grid-row-options-icon{
+	width:16px;
+	height:16px;
+	background:url("/ui2/js/extjs-4.1/theme/images/tools/tool-sprites.png") 0 -48px no-repeat;
+}
+
+.scalr-ui-account-users .x-grid-row-options-trigger{
+	right:5px;
+}
+
+
+/*permissions menu*/
+.x-menu-account2-teams-permissions,  .x-menu-account2-teams-permissions .x-menu-body{
+	background:#fff!important;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px #7B8BA1;	
+}
+
+.x-menu-account2-teams-permissions .x-menu-icon-separator{
+	display:none;
+}
+
+.x-menu-account2-teams-permissions .x-menu-item-text{
+	color:#000;
+}
+
+.x-menu-account2-teams-permissions .x-menu-item-link{
+	padding:4px 4px 4px 30px;
+}
+
+.x-menu-account2-teams-permissions .x-menu-item-active .x-menu-item-link{
+	background:#eee;
+	box-shadow:none;
+}
+
+.x-menu-account2-teams-permissions .x-menu-item-separator{
+	height:1px;
+	border:0;
+	background:#eee;
+}
+
+.x-menu-account2-teams-permissions .x-menu-item-icon{
+	top:6px;
+}
+.x-menu-account2-teams-permissions .x-menu-item-text{
+	font-weight:bold;
+	color:#333;
+}
+
+/*edit teams button*/
+.scalr-ui-account-user-teams-list{
+	line-height: 24px;
+}
+
+.scalr-ui-account-user-teams-list a{
+	color:#0055cc;
+}
+
+.scalr-ui-account-user-teams-list .user-teams-edit{
+	background: rgba(255, 255, 255, 0.8);
+	padding: 1px 8px;
+	border: 1px dotted #B1B7C7;
+	border-radius: 3px;
+	color: #333333;
+	font: normal 12px arial, helvetica, sans-serif;
+}
+
+.scalr-ui-account-user-teams-list .user-teams-edit:hover{
+	background: rgba(255, 255, 255, 0.5);
+	color: #333333;
+	text-decoration:none;
+}
+
+.hide-edit-teams-button .user-teams-edit{
+	display:none;
+}
+
+
+/*hide grid button*/
+.scalr-ui-account-users .x-btn-groupacton-close{
+	width: 19px;
+	height:19px;
+	background: url('/ui2/images/ui/account/close_button_sprite.png?1.2') 0 0 no-repeat;
+}
+
+.scalr-ui-account-users .x-btn-action-small-over .x-btn-groupacton-close{
+	background-position:0 -19px;
+	transition:none;
+	-webkit-transition: none;
+}

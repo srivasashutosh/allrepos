@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegisterInstancesWithLoadBalancerResponse xmlns="http://elasticloadbalancing.amazonaws.com/doc/2012-06-01/">
+  <RegisterInstancesWithLoadBalancerResult>    
+    <Instances>
+      <member>
+        <InstanceId>instance-id-1</InstanceId>
+      </member>
+      <member>
+        <InstanceId>instance-id-2</InstanceId>
+      </member>
+      <member>
+        <InstanceId>instance-id-3</InstanceId>
+      </member>
+      <member>
+        <InstanceId>instance-id-4</InstanceId>
+      </member>
+    </Instances>
+  </RegisterInstancesWithLoadBalancerResult>
+  <ResponseMetadata>
+    <RequestId>90f15079-0891-11e2-b66c-d3e9b1511128</RequestId>
+  </ResponseMetadata>
+</RegisterInstancesWithLoadBalancerResponse>

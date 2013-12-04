@@ -1,0 +1,77 @@
+{
+"ec2":[
+	{"image_id":"ami-2cca7c2d","os_version":"5.7","os_family":"oel","cloud_location":"ap-northeast-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-e8f4b1ba","os_version":"5.7","os_family":"oel","cloud_location":"ap-southeast-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-d594aba1","os_version":"5.7","os_family":"oel","cloud_location":"eu-west-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-9c578881","os_version":"5.7","os_family":"oel","cloud_location":"sa-east-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-9fa076f6","os_version":"5.7","os_family":"oel","cloud_location":"us-east-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-5ddb8518","os_version":"5.7","os_family":"oel","cloud_location":"us-west-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-4446cb74","os_version":"5.7","os_family":"oel","cloud_location":"us-west-2","architecture":"x86_64","root_device_type":"ebs"},
+	
+	{"image_id":"ami-91119590","os_version":"6.4","os_family":"rhel","cloud_location":"ap-northeast-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-38367b6a","os_version":"6.4","os_family":"rhel","cloud_location":"ap-southeast-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-821f89b8","os_version":"6.4","os_family":"rhel","cloud_location":"ap-southeast-2","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-2cc8c158","os_version":"6.4","os_family":"rhel","cloud_location":"eu-west-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-85b76c98","os_version":"6.4","os_family":"rhel","cloud_location":"sa-east-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-db4bdcb2","os_version":"6.4","os_family":"rhel","cloud_location":"us-east-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-fe9cbfbb","os_version":"6.4","os_family":"rhel","cloud_location":"us-west-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-4057dd70","os_version":"6.4","os_family":"rhel","cloud_location":"us-west-2","architecture":"x86_64","root_device_type":"ebs"},
+	
+	{"image_id":"ami-0366e302","os_version":"10.04","os_family":"ubuntu","cloud_location":"ap-northeast-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-42e1a310","os_version":"10.04","os_family":"ubuntu","cloud_location":"ap-southeast-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-eebd2bd4","os_version":"10.04","os_family":"ubuntu","cloud_location":"ap-southeast-2","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-ca1a14be","os_version":"10.04","os_family":"ubuntu","cloud_location":"eu-west-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-2f6ab232","os_version":"10.04","os_family":"ubuntu","cloud_location":"sa-east-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-21e47148","os_version":"10.04","os_family":"ubuntu","cloud_location":"us-east-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-e63013a3","os_version":"10.04","os_family":"ubuntu","cloud_location":"us-west-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-6ec8425e","os_version":"10.04","os_family":"ubuntu","cloud_location":"us-west-2","architecture":"x86_64","root_device_type":"ebs"},
+	
+	{"image_id":"ami-d71a9ad6","os_version":"12.04","os_family":"ubuntu","cloud_location":"ap-northeast-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-6686ca34","os_version":"12.04","os_family":"ubuntu","cloud_location":"ap-southeast-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-4a38a970","os_version":"12.04","os_family":"ubuntu","cloud_location":"ap-southeast-2","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-1ef5ff6a","os_version":"12.04","os_family":"ubuntu","cloud_location":"eu-west-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-c371aade","os_version":"12.04","os_family":"ubuntu","cloud_location":"sa-east-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-1ebb2077","os_version":"12.04","os_family":"ubuntu","cloud_location":"us-east-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-b0c3eef5","os_version":"12.04","os_family":"ubuntu","cloud_location":"us-west-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-3a891d0a","os_version":"12.04","os_family":"ubuntu","cloud_location":"us-west-2","architecture":"x86_64","root_device_type":"ebs"},
+	
+	{"image_id":"ami-bd1797bc","os_version":"12.04","os_family":"ubuntu","cloud_location":"ap-northeast-1","architecture":"x86_64","root_device_type":"instance-store"},
+	{"image_id":"ami-ae85c9fc","os_version":"12.04","os_family":"ubuntu","cloud_location":"ap-southeast-1","architecture":"x86_64","root_device_type":"instance-store"},
+	{"image_id":"ami-5238a968","os_version":"12.04","os_family":"ubuntu","cloud_location":"ap-southeast-2","architecture":"x86_64","root_device_type":"instance-store"},
+	{"image_id":"ami-02f4fe76","os_version":"12.04","os_family":"ubuntu","cloud_location":"eu-west-1","architecture":"x86_64","root_device_type":"instance-store"},
+	{"image_id":"ami-a771aaba","os_version":"12.04","os_family":"ubuntu","cloud_location":"sa-east-1","architecture":"x86_64","root_device_type":"instance-store"},
+	{"image_id":"ami-e2861d8b","os_version":"12.04","os_family":"ubuntu","cloud_location":"us-east-1","architecture":"x86_64","root_device_type":"instance-store"},
+	{"image_id":"ami-f6c3eeb3","os_version":"12.04","os_family":"ubuntu","cloud_location":"us-west-1","architecture":"x86_64","root_device_type":"instance-store"},
+	{"image_id":"ami-8c881cbc","os_version":"12.04","os_family":"ubuntu","cloud_location":"us-west-2","architecture":"x86_64","root_device_type":"instance-store"},
+	
+	{"image_id":"ami-18f5ff6c","os_version":"12.04","os_family":"ubuntu","cloud_location":"eu-west-1","architecture":"x86_64","root_device_type":"ebs", "hvm": 1},
+	{"image_id":"ami-10bb2079","os_version":"12.04","os_family":"ubuntu","cloud_location":"us-east-1","architecture":"x86_64","root_device_type":"ebs", "hvm": 1},
+	{"image_id":"ami-3c891d0c","os_version":"12.04","os_family":"ubuntu","cloud_location":"us-west-2","architecture":"x86_64","root_device_type":"ebs", "hvm": 1},
+	
+	{"image_id":"ami-e5bd3ce4","os_version":"6.4","os_family":"centos","cloud_location":"ap-northeast-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-a6fdb0f4","os_version":"6.4","os_family":"centos","cloud_location":"ap-southeast-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-88dfd4fc","os_version":"6.4","os_family":"centos","cloud_location":"eu-west-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-b53ee5a8","os_version":"6.4","os_family":"centos","cloud_location":"sa-east-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-d2118ebb","os_version":"6.4","os_family":"centos","cloud_location":"us-east-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-4879540d","os_version":"6.4","os_family":"centos","cloud_location":"us-west-1","architecture":"x86_64","root_device_type":"ebs"},
+	{"image_id":"ami-2a66f31a","os_version":"6.4","os_family":"centos","cloud_location":"us-west-2","architecture":"x86_64","root_device_type":"ebs"}
+],
+"gce":[
+	{"os_family":"centos","os_version":"6.X","architecture":"x86_64","image_id":"centos-cloud\/global\/images\/centos-6-v20130522"},
+	{"os_family":"debian","os_version":"6.0.7","architecture":"x86_64","image_id":"debian-cloud\/global\/images\/debian-6-squeeze-v20130617"},
+	{"os_family":"debian","os_version":"7.1","architecture":"x86_64","image_id":"debian-cloud\/global\/images\/debian-7-wheezy-v20130617"}
+],
+"rackspacengus":[
+	{"cloud_location":"DFW","os_family":"ubuntu","os_version":"12.04","architecture":"x86_64","image_id":"5cebb13a-f783-4f8c-8058-c4182c724ccd"},
+	{"cloud_location":"ORD","os_family":"ubuntu","os_version":"12.04","architecture":"x86_64","image_id":"5cebb13a-f783-4f8c-8058-c4182c724ccd"},
+	{"cloud_location":"DFW","os_family":"centos","os_version":"6.3","architecture":"x86_64","image_id":"c195ef3b-9195-4474-b6f7-16e5bd86acd0"},
+	{"cloud_location":"ORD","os_family":"centos","os_version":"6.3","architecture":"x86_64","image_id":"c195ef3b-9195-4474-b6f7-16e5bd86acd0"},
+	{"cloud_location":"DFW","os_family":"rhel","os_version":"6.1","architecture":"x86_64","image_id":"d6dd6c70-a122-4391-91a8-decb1a356549"},
+	{"cloud_location":"ORD","os_family":"rhel","os_version":"6.1","architecture":"x86_64","image_id":"d6dd6c70-a122-4391-91a8-decb1a356549"}
+],
+"rackspacenguk":[
+	{"cloud_location":"LON","os_family":"ubuntu","os_version":"12.04","architecture":"x86_64","image_id":"5cebb13a-f783-4f8c-8058-c4182c724ccd"},
+	{"cloud_location":"LON","os_family":"centos","os_version":"6.3","architecture":"x86_64","image_id":"c195ef3b-9195-4474-b6f7-16e5bd86acd0"},
+	{"cloud_location":"LON","os_family":"rhel","os_version":"6.1","architecture":"x86_64","image_id":"d6dd6c70-a122-4391-91a8-decb1a356549"}
+]
+}

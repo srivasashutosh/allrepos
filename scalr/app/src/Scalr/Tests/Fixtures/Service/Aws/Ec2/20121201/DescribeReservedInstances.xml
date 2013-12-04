@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DescribeReservedInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2012-12-01/">
+    <requestId>50082c4b-85a8-42ba-b615-78befc576fb3</requestId>
+    <reservedInstancesSet>
+        <item>
+            <reservedInstancesId>b847fa93-815e-4e61-b21e-34fea354e420</reservedInstancesId>
+            <instanceType>m1.small</instanceType>
+            <availabilityZone>us-east-1c</availabilityZone>
+            <start>2011-09-05T08:13:53.940Z</start>
+            <duration>94608000</duration>
+            <fixedPrice>350.0</fixedPrice>
+            <usagePrice>0.03</usagePrice>
+            <instanceCount>4</instanceCount>
+            <productDescription>Linux/UNIX</productDescription>
+            <state>active</state>
+            <instanceTenancy>default</instanceTenancy>
+            <currencyCode>USD</currencyCode>
+            <offeringType>Medium Utilization</offeringType>
+            <recurringCharges>
+                <item>
+                    <frequency>Hourly</frequency>
+                    <amount>0.03</amount>
+                </item>
+            </recurringCharges>
+            <tagSet>
+                <item>
+                    <key>Name</key>
+                    <value>Single</value>
+                </item>
+            </tagSet>
+        </item>
+    </reservedInstancesSet>
+</DescribeReservedInstancesResponse>

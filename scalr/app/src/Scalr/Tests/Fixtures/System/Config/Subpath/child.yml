@@ -1,0 +1,13 @@
+parameters:
+  foo: foo-value
+  multiline: |
+    this is
+    multiline
+    string
+  longstring: >
+    Sevastopol (pron.: /ˌsɛvəˈstoʊpəl/ or (more usually) /səˈvæstəpoʊl/; previously Sebastopol; 
+    Ukrainian and Russian - Севасто́поль; Crimean Tatar - Aqyar) is one of two cities with special status in Ukraine 
+    (the other being the capital, Kiev), located on the Black Sea coast of the Crimean Peninsula. 
+    It has a population of 342,451 (2001).[1] Sevastopol is the second largest port in Ukraine[dubious – discuss], 
+    after the Port of Odessa.
+  ado: genius

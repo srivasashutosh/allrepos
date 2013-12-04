@@ -1,0 +1,24 @@
+# plugin metadata for ssh-example plugin
+
+name: ssh-example
+rundeckPluginVersion: 1.0
+author: Greg Schueler
+date: 4/11/2011
+version: 1.0
+providers:
+    - name: ssh-example
+      service: NodeExecutor
+      title: System SSH
+      description: Executes the command by calling the system SSH binary
+      plugin-type: script
+      script-interpreter: /bin/bash
+      script-file: ssh-exec.sh
+      script-args: ${node.username} ${node.hostname} ${exec.command}
+    - name: scp-example
+      service: FileCopier
+      title: System SCP
+      description: Copies the file by calling the system SCP binary
+      plugin-type: script
+      script-interpreter: /bin/bash
+      script-file: ssh-copy.sh
+      script-args: ${node.username} ${node.hostname} ${file-copy.file}

@@ -1,0 +1,127 @@
+.scalr-ui-farmbuilder-tabs .x-button-text{
+    background: #ccd3dd;
+    border-radius:0;
+    height: 36px;
+	margin:0 0 0 12px;
+	text-align:left;
+	color: #202B3D;
+	font: bold 13px/35px arial,helvetica,sans-serif;
+	text-shadow: 0 1px #eee;
+    display:block;
+    border-top: 1px solid #e0e5eb!important;
+    border-bottom: 1px solid #afbccb!important;
+    box-shadow:none;
+    padding:0 0 0 12px;
+    position:relative;
+}
+
+.scalr-ui-farmbuilder-tabs .x-button-text .delete-search{
+    position:absolute;
+    width:10px;
+    height:11px;
+    right:3px;
+    top:3px;
+    background: url("/ui2/images/ui/farms/selroles/close_small.png") 0 0 no-repeat;
+}
+
+.scalr-ui-farmbuilder-tabs .scalr-ui-farmbuilder-button-first{
+    border-radius:4px 0 0 0;
+}
+
+.scalr-ui-farmbuilder-tabs .scalr-ui-farmbuilder-button-last{
+    border-radius:0 0 0 4px;
+}
+
+.scalr-ui-farmbuilder-tabs .scalr-ui-farmbuilder-button-quickstart{
+    color: #176F2B;
+    border-radius: 4px 0 0 4px;
+    margin-bottom: 12px;
+}
+
+.scalr-ui-farmbuilder-tabs .scalr-ui-farmbuilder-button-search{
+    font-weight:normal;
+}
+
+.scalr-ui-farmbuilder-tabs .x-button-text-pressed{
+    background: none repeat scroll 0 0 #DFE4EA;
+    border-radius: 4px 0 0 4px;
+    box-shadow: 0 1px 3px #485B6F, 0 1px #EFF2F5 inset;
+	margin-left:6px;
+    padding-left:18px;
+    z-index:2;
+    border-top: 0!important;
+    border-bottom: 0!important;
+}
+
+.scalr-ui-farmbuilder-tabs .scalr-ui-farmbuilder-button-deprecated{
+    color: #555;
+    position:relative;
+}
+
+.scalr-ui-farmbuilder-tabs .scalr-ui-farmbuilder-button-deprecated span.deprecated{
+    text-transform: capitalize;
+    position:absolute;
+    right:5px;
+    top:2px;
+    font: bold 10px/11px arial,helvetica,sans-serif;
+    color:#777;
+}
+
+.scalr-ui-farmbuilder-roleedit-maintab .align-top{
+	vertical-align:top;
+}
+
+.scalr-ui-farmbuilder-roleedit-maintab .x-grid-empty{
+    padding: 5px 10px;
+}
+
+.x-comboradiolist .x-menu-item-disabled-forced .x-menu-item-text{
+    padding-right: 20px;
+    background: url('/ui2/js/extjs-4.1/theme/images/form/trigger-warning.png') 100% 50% no-repeat;
+}
+
+.scalr-ui-farmbuilder-roleedit-tab{
+    border-radius:0 4px 4px 0;
+}
+
+.scalr-ui-farmbuilder-roleedit-maintab{
+    border-radius: 4px;
+}
+
+/*.scalr-ui-first-tab-active .scalr-ui-farmbuilder-roleedit-tab{
+    border-radius:0 4px 4px;
+}*/
+
+.scalr-ui-farmbuilder-roleedit .x-fieldset-with-title .x-fieldset-header-checkbox{
+    margin-left:-20px;
+    margin-top:10px;
+}
+
+.scalr-ui-farmbuilder-roleedit .x-fieldset-with-title .x-tool{
+    margin-right: 2px;
+}
+
+/*multiselect with checkboxes*/
+.x-boundlist-checkboxes .x-boundlist-item{
+    font: 13px/16px arial,helvetica,tahoma,sans-serif;
+    height: 32px;
+    padding: 7px 3px 7px 24px;
+    padding-left:28px;
+    background: url("/ui2/js/extjs-4.1/theme/images/menu/unchecked.png") 8px 7px no-repeat;
+}
+
+.x-boundlist-checkboxes .x-boundlist-item-disabled{
+    opacity: .6;
+    cursor: default;
+    background-color:transparent!important;
+}
+
+.x-boundlist-checkboxes .x-boundlist-selected{
+    background-image: url("/ui2/js/extjs-4.1/theme/images/menu/checked.png");
+}
+
+.x-boundlist-checkboxes .x-boundlist-item .warning{
+    height:100%;
+    padding:0 9px;
+    background: url('/ui2/js/extjs-4.1/theme/images/form/trigger-warning.png') 100% 50% no-repeat;
+}

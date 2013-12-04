@@ -1,0 +1,99 @@
+.scalr-ui-dbbackups-cell-title {
+	background: -webkit-gradient(linear, left top, left bottom, from(#ECECEC), to(#cdcdcd));
+	background: -moz-linear-gradient(top, #ECECEC, #cdcdcd);
+	height: 26px;
+	color: #333333;
+	font: bold 12px arial;
+	text-shadow: 0 1px #dddddd;
+	padding: 6px;
+	text-align: center;
+	cursor: pointer;
+	/*border-left: 1px solid #FFF;*/
+	border-right: 2px solid #FFF;
+}
+.scalr-ui-dbbackups-cell-title-day {
+	border-right: 2px none !important;
+}
+
+.scalr-ui-dbbackups-cell-title item:last-child {
+	border-right: 0;
+}
+.scalr-ui-dbbackups-cell-title-right {
+	background-color: #f5f5f5;
+	padding: 6px 0 0 3px;
+	overflow-y: auto;
+	cursor: pointer;
+	border-right: 2px solid #FFF;
+	border-bottom: 2px solid #FFF;
+	text-align: right;
+}
+.scalr-ui-dbbackups-cell-title-right item:last-child{
+	border-right: 0;
+}
+
+.scalr-ui-dbbackups-cell-title-right item:first-child{
+	border-left: 0;
+}
+
+.scalr-ui-dbbackups-cell-title-right span {
+	color: #999999;
+	font: 12px arial;
+}
+
+.scalr-ui-dbbackups-cell-title-right span.day {
+	margin-right: 19px;
+}
+
+.scalr-ui-dbbackups-cell-title-right:hover {
+	background-color: #D6D6D6;
+}
+
+.scalr-ui-dbbackups-cell-empty {
+	background-color: #E5E5E5;
+	border-right: 2px solid #FFF;
+	border-bottom: 2px solid #FFF;
+}
+
+.scalr-ui-dbbackups-cell-empty item:last-child{
+	border-right: 0;
+}
+
+.scalr-ui-dbbackups-cell-empty item:first-child{
+	border-left: 0;
+}
+
+.scalr-ui-dbbackups-cell-content {
+	height: 22px;
+	background-color: #FFF;
+	border-radius: 4px;
+	text-align: left;
+	color: black;
+	margin: 5px;
+	padding: 3px;
+	cursor: pointer;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+.scalr-ui-dbbackups-cell-content:hover a{
+	text-decoration: none;
+	border-bottom: 1px dashed #666;
+	color: #666;
+}
+
+.scalr-ui-dbbackups-cell-time {
+	padding: 11px 0 0 11px;
+	background-color: #f5f5f5;
+	color: #999999;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+
+.scalr-ui-dbbackups-cell-details {
+	padding: 3px 3px 0 0;
+	background-color: #f5f5f5;
+	color: #999999;
+	border-bottom: 2px solid #fff;
+}

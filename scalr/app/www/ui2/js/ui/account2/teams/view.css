@@ -1,0 +1,140 @@
+.scalr-ui-account-teams .x-dataview-columned .x-item-inner{
+	min-height:116px;
+}
+
+.scalr-ui-account-teams .x-dataview-columned .x-item-disabled{
+    background: none repeat scroll 0 0 #CCD3De!important;
+    box-shadow: 0 1px #E0E5EB inset!important;
+	opacity:.5;
+}
+
+.scalr-ui-account-teams .x-dataview-columned table{
+	border-collapse:collapse;
+}
+
+.scalr-ui-account-teams .x-dataview-columned table td{
+	width:180px;
+	padding:0;
+	vertical-align:top;
+	line-height:20px;
+}
+
+.scalr-ui-account-teams .x-dataview-columned .x-item-title{
+	font: bold 18px arial, helvetica, sans-serif;
+	color: #202B3D;
+	text-shadow: 0 1px white;
+	margin-bottom:16px;
+	width: 190px;
+	word-wrap:break-word;
+}
+
+.scalr-ui-account-teams .x-dataview-columned .x-item-status{
+	font: bold 18px arial, helvetica, sans-serif;
+	color: #519F00;
+	text-shadow: 0 1px white;
+	margin-bottom:16px;
+}
+
+.scalr-ui-account-teams .x-dataview-columned .x-item-status-inactive{
+	color: #be2a00;	
+}
+
+.scalr-ui-account-teams .x-dataview-columned .x-item-param-value{
+	line-height:22px;
+	word-wrap:break-word;
+	max-width:130px;
+}
+
+.scalr-ui-account-teams .x-dataview-columned .x-item-param-title{
+	font-weight:bold;
+	line-height:22px;
+	width:50px;
+}
+
+.scalr-ui-account-teams .team-add-remove{
+	display:none;
+	cursor:pointer;
+}
+
+.scalr-ui-account-teams .x-grid-row-over .team-add-remove, .scalr-ui-account-teams .x-grid-row-selected .team-add-remove{
+	display:inline;
+}
+
+/*access control column*/
+.scalr-ui-account-teams .user-permission{
+	font-weight:bold;
+}
+
+.scalr-ui-account-teams .x-grid-cell-inner{
+	position:relative;
+}
+
+.scalr-ui-account-teams .x-grid-row-options{
+	width:40px;
+	line-height:22px;
+	height:22px;
+	display:none;
+	position:absolute;
+	top:1px;
+	right:5px;
+	background:#eeeeee;
+	box-shadow:none;
+}
+
+.scalr-ui-account-teams .x-grid-row-options:hover{
+	background:#eeeeee;
+	box-shadow:none;
+}
+
+.scalr-ui-account-teams .x-grid-row-over .x-grid-row-options, .scalr-ui-account-teams .x-grid-row-selected .x-grid-row-options{
+	display:block;
+}
+
+.scalr-ui-account-teams .x-grid-row-options-icon{
+	width:16px;
+	height:16px;
+	background:url("/ui2/js/extjs-4.1/theme/images/tools/tool-sprites.png") 0 -48px no-repeat;
+}
+
+.scalr-ui-account-teams .x-grid-row-options-trigger{
+	right:5px;
+}
+
+
+/*permissions menu*/
+.x-menu-account2-teams-permissions,  .x-menu-account2-teams-permissions .x-menu-body{
+	background:#fff!important;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px #7B8BA1;	
+}
+
+.x-menu-account2-teams-permissions .x-menu-icon-separator{
+	display:none;
+}
+
+.x-menu-account2-teams-permissions .x-menu-item-text{
+	color:#000;
+}
+
+.x-menu-account2-teams-permissions .x-menu-item-link{
+	padding:4px 4px 4px 30px;
+}
+
+.x-menu-account2-teams-permissions .x-menu-item-active .x-menu-item-link{
+	background:#eee;
+	box-shadow:none;
+}
+
+.x-menu-account2-teams-permissions .x-menu-item-separator{
+	height:1px;
+	border:0;
+	background:#eee;
+}
+
+.x-menu-account2-teams-permissions .x-menu-item-icon{
+	top:6px;
+}
+.x-menu-account2-teams-permissions .x-menu-item-text{
+	font-weight:bold;
+	color:#333;
+}

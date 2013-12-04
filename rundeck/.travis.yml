@@ -1,0 +1,17 @@
+language: java
+env: MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=192m" GRADLE_OPTS="-Xmx512m -XX:MaxPermSize=192m"
+jdk:
+  - openjdk6
+
+# whitelist
+branches:
+  only:
+    - development
+    - rundeck2
+
+notifications:
+  irc:
+    - "irc.freenode.org#rundeck"
+  #email: false
+
+

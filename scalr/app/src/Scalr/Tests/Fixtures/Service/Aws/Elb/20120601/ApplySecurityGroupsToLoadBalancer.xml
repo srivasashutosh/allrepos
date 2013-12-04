@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplySecurityGroupsToLoadBalancerResponse xmlns="http://elasticloadbalancing.amazonaws.com/doc/2012-06-01/">
+    <ApplySecurityGroupsToLoadBalancerResult>
+        <SecurityGroups>
+            <member>sg-4519f42a</member>
+            <member>sg-4519f42b</member>
+        </SecurityGroups>
+    </ApplySecurityGroupsToLoadBalancerResult>
+    <ResponseMetadata>
+        <RequestId>90f15079-0891-11e2-b66c-d3e9b1511128</RequestId>
+    </ResponseMetadata>
+</ApplySecurityGroupsToLoadBalancerResponse>

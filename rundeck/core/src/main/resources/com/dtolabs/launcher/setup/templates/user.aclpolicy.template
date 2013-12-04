@@ -1,0 +1,36 @@
+description: User project level access control.
+context:
+  project: '.*' # all projects
+for:
+  resource:
+    - equals:
+        kind: node
+      allow: [read] # allow read node sources
+    - equals:
+        kind: event
+      allow: [read,create] # allow read/create events
+  adhoc:
+    - allow: [run,kill] # allow running/killing adhoc jobs
+  job: 
+    - allow: [read,run,kill] # allow read/run/kill of all jobs
+  node:
+    - allow: [read,run] # allow read/run for all nodes
+by:
+  group: user
+
+---
+
+description: User Application level access control.
+context:
+  application: 'rundeck'
+for:
+  resource:
+    - equals:
+        kind: system
+      allow: [read] # allow read of system info
+  project:
+    - match:
+        name: '.*'
+      allow: [read] # allow view of all projects
+by:
+  group: user

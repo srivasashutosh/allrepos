@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeleteLoadBalancerResponse xmlns="http://elasticloadbalancing.amazonaws.com/doc/2012-06-01/">
+  <DeleteLoadBalancerResult/>
+  <ResponseMetadata>
+    <RequestId>ad4834c0-07ed-11e2-bbf7-a7e773bdcd1b</RequestId>
+  </ResponseMetadata>
+</DeleteLoadBalancerResponse>

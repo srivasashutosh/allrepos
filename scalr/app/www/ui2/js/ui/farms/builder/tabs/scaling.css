@@ -1,0 +1,31 @@
+.x-grid-role-scaling-rules .x-grid-cell-inner{
+    padding:12px 11px 10px;
+}
+
+.x-grid-role-scaling-rules .x-grid-cell-special .x-grid-cell-inner {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.x-grid-role-scaling-rules .x-grid-empty{
+    padding-top:2px;
+}
+
+.x-grid-role-scaling-rules .x-grid-empty img{
+    position:relative;
+    top:5px;
+}
+
+.x-grid-scaling-schedule-rules .x-panel-header{
+    background:none;
+    border:0;
+    box-shadow:none;
+    padding-left:0;
+}
+
+.x-grid-scaling-schedule-rules .x-panel-header-text{
+    color: #212B3D;
+    font: 18px/22px arial,helvetica,tahoma,sans-serif;
+    text-shadow: 0 1px #FFFFFF;
+    padding:0;
+}

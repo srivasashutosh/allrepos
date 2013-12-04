@@ -1,0 +1,73 @@
+.scalr-ui-dnszone-form .x-grid-view-dns-records{
+	overflow-x: hidden!important;
+	min-height:30px;
+}
+
+/* row editor*/
+.scalr-ui-dnszone-form .x-grid-row-editor {
+	position: absolute !important;
+	z-index: 1;
+	zoom: 1;
+	overflow: visible !important; 
+}
+
+.scalr-ui-dnszone-form .x-grid-row-editor .x-panel-body {
+	background-color: #F0F1F4;
+	border-top: 1px solid #DBDFE6 !important;
+	border-bottom: 1px solid #DBDFE6 !important; 
+}
+
+.scalr-ui-dnszone-form .x-grid-row-editor-buttons {
+	background-color: #F0F1F4;
+	position: absolute;
+	/*bottom: -31px;*/
+	padding: 4px;
+	height: 32px;
+	border: 1px solid #DBDFE6; 
+	border-top:0;
+	border-radius: 0 0 3px 3px;
+	
+	visibility:hidden;
+	height:0!important;
+	overflow:hidden;
+	padding:0;
+}
+
+.scalr-ui-dnszone-form .x-grid-row-editor-buttons .x-btn-inner{
+	font: bold 12px/16px Arial;	
+}
+
+.scalr-ui-dnszone-form .x-grid-row-editor-buttons .x-btn-center{
+	margin-left:-8px;/*to investigate: unknown left margin*/
+}
+
+.scalr-ui-dnszone-form .x-grid-dirty-cell{
+	background-image: url("/ui2/js/extjs-4.1/theme/images/grid/dirty.gif") !important;
+	background-position:0 0!important;
+	background-repeat:no-repeat!important;
+}
+
+.scalr-ui-dnszone-form .x-grid-row-over .x-grid-cell{
+	background:#e3e3e3;
+}
+
+.scalr-ui-dnszone-form .x-grid-row-selected .x-grid-cell{
+	background-color:#BFC4CB;
+}
+
+.scalr-ui-dnszone-form .x-fieldset-panel{
+	background: #F0F1F4;
+	border-radius: 4px;
+}
+
+.scalr-ui-dnszone-form .x-fieldset-panel .x-panel-header{
+	background: transparent;
+	box-shadow: none;
+	padding: 1px 0 6px;
+}
+
+.scalr-ui-dnszone-form .x-fieldset-panel .x-panel-header-text-default{
+    color: #212B3D;
+    font: 18px/33px arial,helvetica,tahoma,sans-serif;
+    text-shadow: 0 1px #FFFFFF;
+}

@@ -1,0 +1,19 @@
+imports:
+  - { resource: 'child.yml' }
+
+scalr:
+  phpunit:
+    skip_functional_tests: true
+    test_userid: 100001
+    test_envid: 200002
+
+  auditlog:
+    enabled: override-this
+    mysql: 
+      name: override-this
+
+  inherit:
+    multiline: %multiline%
+    foo: %foo%
+    longstring: %longstring%
+    ado: %ado% 

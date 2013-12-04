@@ -1,0 +1,1 @@
+{"postgresql.conf": {"exclude": ["hot_standby", "data_directory", "listen_addresses", "wal_level", "pid_file", "ssl", "unix_socket_directory", "hba_file", "port", "external_pid_file", "ident_file"], "include": ["/*"], "doc": []}}

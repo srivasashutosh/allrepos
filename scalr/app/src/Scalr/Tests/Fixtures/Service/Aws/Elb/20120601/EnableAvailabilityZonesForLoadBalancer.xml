@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnableAvailabilityZonesForLoadBalancerResponse xmlns="http://elasticloadbalancing.amazonaws.com/doc/2012-06-01/">
+    <EnableAvailabilityZonesForLoadBalancerResult>
+        <AvailabilityZones>
+            <member>us-east-1a</member>
+            <member>us-east-1d</member>
+            <member>us-east-1c</member>
+        </AvailabilityZones>
+    </EnableAvailabilityZonesForLoadBalancerResult>
+    <ResponseMetadata>
+        <RequestId>90f15079-0891-11e2-b66c-d3e9b1511128</RequestId>
+    </ResponseMetadata>
+</EnableAvailabilityZonesForLoadBalancerResponse>

@@ -1,0 +1,112 @@
+.scalr-ui-account-env .x-dataview-columned .x-item{
+	position:relative;
+}
+
+.scalr-ui-account-env .x-dataview-columned .x-item-inner{
+	min-height:116px;
+}
+
+.scalr-ui-account-env .x-dataview-columned .x-item .scalr-ui-icon-platform{
+	float:left;
+}
+
+.scalr-ui-account-env .x-dataview-columned table{
+	border-collapse:collapse;
+}
+
+.scalr-ui-account-env .x-dataview-columned table td{
+	width:185px;
+	padding:0 12px 0 0;
+	vertical-align:top;
+	line-height:20px;
+}
+
+.scalr-ui-account-env .x-dataview-columned .x-item-id{
+	position:absolute;
+	top:5px;
+	right:7px;
+	text-shadow: 0 1px white;
+	color:#777;
+}
+
+.scalr-ui-account-env .x-dataview-columned .x-item-selected .x-item-id{
+	right:19px;
+}
+
+.scalr-ui-account-env .x-dataview-columned .x-item-title{
+	font: bold 18px arial, helvetica, sans-serif;
+	text-shadow: 0 1px white;
+	margin-bottom:16px;
+	max-width: 160px;
+	word-wrap:break-word;
+}
+
+.scalr-ui-account-env .x-dataview-columned .x-item-status{
+	font: bold 18px arial, helvetica, sans-serif;
+	color: #519F00;
+	text-shadow: 0 1px white;
+	margin-bottom:16px;
+}
+
+.scalr-ui-account-env .x-dataview-columned .x-item-status-inactive{
+	color: #be2a00;	
+}
+
+.scalr-ui-account-env .x-dataview-columned .x-item-param{
+	line-height:18px;
+}
+
+.scalr-ui-account-env .x-dataview-columned .x-item-param-title{
+	font-weight:bold;
+	line-height:22px;
+}
+
+.scalr-ui-account-env .x-dataview-columned .x-item-param-value{
+	line-height:22px;
+	word-wrap:break-word;
+	max-width:130px;
+}
+
+/*cloud button */
+.scalr-ui-environment-cloud-btn {
+	float:left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background: #fff;
+	border-radius: 4px;
+}
+
+.scalr-ui-environment-cloud-btn .x-btn-inner{
+	cursor: pointer;
+	width: 90px;
+	overflow:hidden;
+}
+
+.scalr-ui-environment-cloud-btn:hover {
+	box-shadow: 0 1px 3px #242D35 inset, 0 1px 1px white;
+}
+
+.scalr-ui-environment-cloud-btn-pressed{
+	background:#E6E8EC;
+	box-shadow: 0 1px 3px #242D35 inset, 0 1px 1px white;
+}
+
+.scalr-ui-environment-cloud-btn .x-btn-name {
+	width: 90px;
+	text-align: center;
+	white-space:nowrap;
+	font-size:11px;
+	text-overflow: ellipsis;
+	padding:0 5px;
+}
+
+.scalr-ui-environment-cloud-btn .x-btn-icon {
+	margin: 5px 0 0 0;
+	height: 60px;
+	text-align: center;
+}
+
+.scalr-ui-environment-cloud-btn .x-btn-icon img{
+	width: 80px;
+	height: 56px;
+}

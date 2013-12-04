@@ -1,0 +1,49 @@
+/**
+ * Rundeck Master-Build Project
+ * 
+ * This project does not contain any buildable code and does not generate any 
+ * artifacts, however it allows us to set defaults for the subjects and provides 
+ * Groovy syntax highlighting for gradle build files (like this one)
+ **/
+
+description = 'The master-build project for Rundeck';
+
+apply plugin: 'eclipse';
+apply plugin: 'idea'
+
+eclipse.project.name = 'rundeck'
+
+/**
+ * Defaults for all projects
+ */
+subprojects {
+    // set the eclipse project naming convention to rundeck:<path>:<projectName>
+    // so it matches the logical hierarchy more closely
+    apply plugin: 'eclipse'
+    eclipse.project.name = "${project.getParent().eclipse.project.name}:${name}"
+    
+    // the environment can be set by adding -Penvironment={value} as a command
+    // line switch. by default we run as 'development'
+    ext.environment = project.hasProperty('environment') ? environment : 'development';
+    
+    // Unless we're doing a release build, append -SNAPSHOT to the end of the
+    // artifacts. Otherwise use the currentVersion as defined in gradle.properties and
+    // the releaseTag if it is not 'GA'
+    def vtag = environment != 'release' ? '-SNAPSHOT' : (project.hasProperty('releaseTag') && releaseTag!='GA' ? '-'+releaseTag : '')  
+    version = currentVersion + vtag
+
+    ext.isReleaseBuild = false
+    ext.isSnapshotBuild = false
+    ext.isDevBuild = false
+    if(project.hasProperty('environment') && project.environment == 'release'){
+        ext.isReleaseBuild=true
+    }else if(project.hasProperty("snapshot")){
+        ext.isSnapshotBuild=true
+    }else{
+        ext.isDevBuild=true
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.2'
+}

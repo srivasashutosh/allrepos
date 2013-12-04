@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DescribeInstanceHealthResponse xmlns="http://elasticloadbalancing.amazonaws.com/doc/2012-06-01/">
+  <DescribeInstanceHealthResult>    
+    <InstanceStates>
+      <member>
+        <InstanceId>instance-id-1</InstanceId>
+        <Description>description-1</Description>
+        <ReasonCode>reason-code-1</ReasonCode>
+        <State>state-1</State>
+      </member>
+      <member>
+        <InstanceId>instance-id-4</InstanceId>
+        <Description>description-4</Description>
+        <ReasonCode>reason-code-4</ReasonCode>
+        <State>state-4</State>
+      </member>
+    </InstanceStates>
+  </DescribeInstanceHealthResult>
+  <ResponseMetadata>
+    <RequestId>90f15079-0891-11e2-b66c-d3e9b1511128</RequestId>
+  </ResponseMetadata>
+</DescribeInstanceHealthResponse>

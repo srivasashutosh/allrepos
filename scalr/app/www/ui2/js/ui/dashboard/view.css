@@ -1,0 +1,446 @@
+.scalr-ui-dashboard-panel .x-grid-empty {
+	font-size: 18px;
+	background-color: #F5F5F5;
+
+	font-family: arial;
+	text-align: center;
+	padding: 30px;
+}
+
+.scalr-ui-dashboard-panel .x-panel {
+	box-shadow: 0 0 0 5px white;
+}
+
+.scalr-ui-dashboard-grid-row .x-grid-cell {
+	background: #EAEAEA !important;
+	box-shadow: 0 -1px #D8D8D8 inset !important;
+}
+
+.scalr-ui-dashboard-grid-row-alt .x-grid-cell {
+	background: whiteSmoke !important;
+	box-shadow: 0 1px white inset !important;
+}
+
+.scalr-ui-dashboard-widgets-usagelaststat .x-grid-row-summary .x-grid-cell {
+	box-shadow: 0 -1px #C9C9C9 inset !important;
+}
+
+.scalr-ui-dashboard-container .x-mask {
+	background: #f5f5f5;
+	opacity: 1;
+}
+
+.scalr-ui-dashboard-container .x-mask-msg div {
+	font: 18px Arial bold;
+	color: #666;
+	background: url("/ui2/images/ui/dashboard/load_widget.gif") no-repeat center 20px #f5f5f5;
+	vertical-align: bottom;
+	text-align: center;
+	width: 100%;
+	height: 110px;
+	padding-top: 70px;
+}
+
+.scalr-ui-dashboard-widgets-billing label.x-form-item-label {
+	font-weight: bold;
+	text-shadow: none;
+	color: #333;
+}
+
+.scalr-ui-dashboard-panel .x-form-display-field {
+	color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.scalr-ui-dashboard-widgets-feedback .x-grid-row, .scalr-ui-dashboard-widgets-cloudyn .x-grid-row {
+	height: 40px;
+}
+
+.scalr-ui-dashboard-widgets-cloudyn .x-grid-row .x-grid-cell {
+	background: #D8E7C2;
+	box-shadow: 0 -1px #B3D189 inset !important;
+}
+
+.scalr-ui-dashboard-widgets-cloudyn .x-grid-row-alt .x-grid-cell {
+	background: #F2F7EB;
+	box-shadow: 0 1px white inset !important;
+}
+
+.scalr-ui-dashboard-widgets-cloudyn .x-grid-row td.bold {
+	font: 13px arial, sans-serif;
+	color: #333333;
+}
+
+.scalr-ui-dashboard-widgets-cloudyn .x-grid-row td.border div {
+	background: #84B845;
+	border-radius: 3px;
+	margin-right: 12px;
+	color: white;
+}
+
+
+
+
+.scalr-ui-dashboard-widgets-feedbackpanel {
+	width: 85px;
+	height: 22px;
+	border-radius: 3px 3px 0px 0px;
+	background: #DDDDDD;
+	opacity: 0.4;
+	z-index: 99;
+	left: 42%;
+	position: absolute;
+	padding: 3px 0px 2px 6px;
+	bottom: 0px;
+	cursor: pointer;
+}
+
+.scalr-ui-dashboard-widgets-feedbackpanel:hover {
+	opacity: 0.8;
+}
+
+.scalr-ui-dashboard-widgets-feedback-status {
+	font: bold 13px arial, sans-serif;
+}
+
+.scalr-ui-dashboard-widgets-feedback-send {
+	display: block;
+	border: none;
+	height: 100%;
+	padding: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.scalr-ui-dashboard-widgets-feedback-send .uvTabs{
+	display: none;
+}
+
+.scalr-ui-dashboard-widgets-feedback-status-started {
+	color:#338606;
+}
+
+.scalr-ui-dashboard-widgets-feedback-status-planned {
+	color:#E89100;
+}
+
+.scalr-ui-dashboard-widgets-feedback-status-declined {
+	color: #E10000;
+}
+
+.scalr-ui-dashboard-widgets-feedback-status-completed {
+	width: 75px;
+	color:#007ED2;
+}
+
+.scalr-ui-dashboard-widgets-feedback-status-no {
+	width: 75px;
+	color: #999999;
+}
+
+.scalr-ui-dashboard-widgets-feedback-status-under-review {
+	width: 90px;
+	color: #444444;
+}
+
+.scalr-ui-dashboard-container {
+	min-height: 200px;
+	border: none;
+}
+
+.scalr-ui-dashboard-container-dd div.editpanel {
+	display: none;
+}
+
+.scalr-ui-dashboard-container div.editpanel div.remove, .scalr-ui-dashboard-container div.editpanel div.add{
+	visibility: hidden;
+	display: inline;
+	float: left;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 10px;
+	background-color: #97A5BB;
+	opacity: 0.25;
+}
+
+.scalr-ui-dashboard-container div.editpanel {
+	display: none;
+	color: white;
+}
+
+.scalr-ui-dashboard-container div.editpanel div.add, .scalr-ui-dashboard-container div.editpanel div.remove {
+	overflow: hidden;
+}
+
+.scalr-ui-dashboard-container-over div.editpanel, .scalr-ui-dashboard-container-over-empty div.editpanel {
+	display: block;
+}
+
+.scalr-ui-dashboard-container-over-empty div.editpanel  div.add:hover, .scalr-ui-dashboard-container-over-empty div.editpanel  div.remove:hover, .scalr-ui-dashboard-container-over div.editpanel div.add:hover{
+	opacity: 0.4;
+}
+
+.scalr-ui-dashboard-container-over div.editpanel div.add {
+	width: 100%;
+	visibility: visible;
+	cursor: pointer;
+	border-radius: 0 0 6px 6px;
+}
+
+.scalr-ui-dashboard-container-over-empty div.editpanel div.remove, .scalr-ui-dashboard-container-over-empty div.editpanel div.add {
+	width: 50%;
+	visibility: visible;
+	cursor: pointer;
+}
+
+.scalr-ui-dashboard-container-over-empty div.editpanel div.add {
+	border-radius: 0 0 0px 6px;
+}
+
+.scalr-ui-dashboard-container-over-empty div.editpanel div.remove {
+	width: 49%;
+	margin-left: 2px;
+	border-radius: 0 0 6px 0px;
+}
+
+.scalr-ui-dashboard-icon-add-widget {
+	background: url('/ui2/images/ui/dashboard/widgets_control_sprite.png') no-repeat 0px 0px;
+	height: 20px;
+	width: 20px;
+}
+
+.scalr-ui-dashboard-icon-remove-column {
+	background: url('/ui2/images/ui/dashboard/widgets_control_sprite.png') no-repeat 0px -20px;
+	height: 20px;
+	width: 20px;
+}
+
+
+.scalr-ui-dashboard-panel .x-panel-dd-spacer {
+	border: 2px dashed #A9BCD8;
+	border-radius: 4px;
+	margin-bottom: 5px;
+}
+
+.scalr-ui-dashboard-farms-servers {
+	display: inline-block;
+	margin-right: 5px;
+	width: 94px;
+	height: 94px;
+}
+
+.scalr-ui-dashboard-farms-servers p{
+	color: #1e8a0a;
+	font-family: arial;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.scalr-ui-dashboard-widgets-div {
+	width: 100%;
+	padding: 5px 5px 5px 12px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background: #eaeaea;
+	box-shadow: 0 -1px #d8d8d8 inset;
+}
+
+.scalr-ui-dashboard-widgets-message {
+	font-size: 13px;
+	font-family: arial;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.scalr-ui-dashboard-widgets-message a {
+	color: #333;
+}
+
+.scalr-ui-dashboard-widgets-message-slim {
+	font-family: arial, sans-serif;
+	font-size: 13px;
+}
+
+.scalr-ui-dashboard-widgets-text {
+	font-size: 13px;
+	font-family: arial;
+	font-weight: bold;
+	color: white;
+}
+
+.scalr-ui-dashboard-widgets-uservoice-vote {
+	font:bold  18px arial, sans-serif;
+	color: #666;
+	text-shadow: 0 1px #ffffff;
+}
+
+.scalr-ui-dashboard-widgets-desc {
+	font-size: 11px;
+	font-family: arial;
+	font-weight:bold;
+	color: #333;
+	margin-bottom: 3px;
+}
+
+.scalr-ui-dashboard-widgets-panelcolor {
+	background: #F5F5F5;
+	box-shadow: 0 1px white inset;
+}
+
+.scalr-ui-dashboard-widgets-message-small {
+	font-size: 13px;
+	color: #333333;
+}
+
+.scalr-ui-dashboard-widgets-info {
+	font-size: 13px;
+	font-family: arial;
+	font-weight:bold;
+	color: #EB4608;
+	text-shadow: 0 1px white;
+	vertical-align: super;
+}
+
+.scalr-ui-dashboard-body-loading2 {
+	font-size: 18px;
+	font-family: arial;
+	font-weight: bold;
+	color: #666;
+}
+
+
+
+ul.scalr-ui-dashboard-farms li {
+	position: relative;
+	display: inline-block;
+	margin: 7px;
+	margin-bottom: 15px;
+	height: 60px;
+	width: 55px;
+	cursor: pointer;
+	text-align: center;
+}
+
+ul.scalr-ui-dashboard-farms li:hover div.icon{
+	background: -webkit-gradient(linear, left top, left bottom, from(#ACB5C3), to(#6A768C));
+	background: -moz-linear-gradient(top, #ACB5C3, #6A768C);
+}
+
+ul.scalr-ui-dashboard-farms li div.icon {
+	height: 50px;
+	width: 50px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#95A0B2), to(#525F79));
+	background: -moz-linear-gradient(top, #95A0B2, #525F79);
+	border-radius: 5px;
+	box-shadow: 0 1px 1px #FBFBFB;
+	position: relative;
+	top: 8px;
+	left: 3px;
+}
+
+ul.scalr-ui-dashboard-farms li div.count {
+	position: absolute;
+	top: 0px;
+	left: 38px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#A7E154), to(#429706));
+	background: -moz-linear-gradient(top, #A7E154, #429706);
+	border-radius: 10px;
+	width: 20px;
+	height: 20px;
+	color: #ffffff;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 11px;
+	padding-top: 3px;
+	box-shadow: 0 1px 1px #374051;
+}
+
+ul.scalr-ui-dashboard-farms li div.option {
+	position: absolute;
+	top: 42px;
+	left: 36px;
+	background: url('/ui2/images/ui/dashboard/settings_sprite.png') no-repeat;
+	background-position: 0px -23px;
+	width: 23px;
+	height: 23px;
+	visibility: hidden;
+	cursor: pointer;
+}
+
+ul.scalr-ui-dashboard-farms li:hover div.option {
+	visibility: visible;
+}
+
+ul.scalr-ui-dashboard-farms li:hover div.option:hover {
+	background-position: 0px 0px;
+}
+
+.scalr-ui-dashboard-farms-text {
+	font-size: 11px;
+	font-family: arial;
+	font-weight: bold;
+	color: #333;
+}
+
+.scalr-ui-dashboard-tutor-message {
+	font-size: 22px;
+	font-family: Roboto Black;
+	color: #666;
+	text-shadow: 0 1px #ffffff;
+}
+
+.scalr-ui-dashboard-tutor-message-big {
+	font-size: 32px;
+	font-family: Roboto Black;
+	color: #666;
+	text-shadow: 0 1px #ffffff;
+}
+
+.scalr-ui-dashboard-tutor-desc {
+	font-size: 11px;
+	font-family: tahoma;
+	color: #666;
+	text-shadow: 0 1px #ffffff;
+	padding: 15px;
+}
+
+.scalr-ui-dashboard-tutor-title {
+	font-size: 14px;
+	font-family: tahoma;
+	font-weight: bold;
+	color: #666;
+	text-shadow: 0 1px #ffffff;
+	text-decoration: none;
+	height: 15px;
+}
+
+.scalr-ui-dashboard-tutor-desc a {
+	color: #666;
+}
+
+@font-face {
+	font-family: "Roboto Black";
+	src:
+		url("Roboto-Black.eot?") format("eot"),
+		url("Roboto-Black.woff") format("woff"),
+		url("Roboto-Black.ttf") format("truetype"),
+		url("Roboto-Black.svg#Roboto-Black") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}

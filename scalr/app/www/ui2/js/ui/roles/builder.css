@@ -1,0 +1,98 @@
+.scalr-ui-rolebuilder-panel-left{
+	background:#DFE4EA;
+	box-shadow: 0 1px #E0E5EB inset;
+	border-radius:4px;
+}
+
+.scalr-ui-rolebuilder-panel-right{
+	background:#F0F1F4;
+	box-shadow: 0 1px #FFFFFF inset;
+	border-radius:4px;
+}
+
+/*new leftmenu*/
+.x-leftmenu-new{
+	background:transparent!important;
+	border-radius:0;
+	box-shadow:none;
+}
+
+.x-leftmenu-new .x-box-scroller-top, .x-leftmenu-new .x-box-scroller-bottom{
+	position:absolute;
+	width:100px;
+	z-index:2;
+}
+
+.x-leftmenu-new .x-box-scroller-bottom{
+	top:auto;
+	bottom:0;
+}
+
+.x-leftmenu-new .x-menu-body{
+	background: url("/ui2/js/extjs-4.1/theme/images/panel/bg.png") 0 0 repeat!important;
+	border-radius:0;
+}
+
+.x-leftmenu-new .x-leftmenu-btn{
+	padding-right:30px;
+	margin:0;
+}
+.x-leftmenu-new .x-leftmenu-btn:last-child{
+	height:104px!important;
+}
+
+
+.x-leftmenu-new .x-btn-inner {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-right: 4px solid #FFFFFF;
+}
+
+.x-leftmenu-new .x-leftmenu-btn:last-child .x-btn-inner {
+    border-bottom: 4px solid #FFFFFF;
+    border-radius: 0 0 4px 4px;
+}
+
+.x-leftmenu-new .x-btn-el {
+    background: none repeat scroll 0 0 #F0F1F4;
+    border-bottom: 1px solid #CED5DF;
+    border-top: 1px solid #FCFCFD;
+    display: block;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important;
+    width: 100px;
+	cursor:pointer;
+}
+
+.x-leftmenu-new .x-leftmenu-btn:first-child .x-btn-el {
+    border-radius: 4px 4px 0 0;
+}
+
+.x-leftmenu-new .x-leftmenu-btn:last-child .x-btn-el {
+    border-bottom: 0 none;
+    border-radius: 0 0 4px 4px;
+}
+
+.x-leftmenu-new .x-leftmenu-btn-pressed {
+    background: url("/ui2/js/extjs-4.1/theme/images/leftmenu/pointer.png") no-repeat scroll 100% 50% transparent;
+}
+
+.x-leftmenu-new .x-leftmenu-btn-pressed .x-btn-el {
+    box-shadow: 0 2px 6px #3D4E69 inset;
+    background-color: #D9DEE6;
+    border-top: 1px solid #6B798F;
+}
+
+.x-leftmenu-new .x-btn-icon{
+    display: block;
+    height: 65px;
+    margin: 0 auto 6px;
+    width: 100px;
+}
+
+.x-leftmenu-new .x-btn-title {
+    color: #333333;
+    font: 12px arial,sans-serif;
+    text-shadow: 0 1px #F4F5F7;
+}

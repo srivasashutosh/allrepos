@@ -1,0 +1,72 @@
+scalr:
+  connections:
+    mysql: &connections_mysql
+      user: 'scalr'
+      pass: 'scalr'
+      host: 'localhost'
+      name: 'scalr'
+    mongo: &connections_mongo
+      host: 'localhost'
+      name: 'db'
+    gearman: &connections_gearman
+      servers: ['localhost']
+    
+  auditlog:
+    enabled: false
+    connetcions:
+      mongo:
+        <<: *connections_mongo
+        driver: 'mongodb'
+        collection: 'auditlog'
+        
+  cloudyn:
+    master_email: ''
+    #Allowed values for the cloudyn.environment are [DEV|ITG|QA|PROD]
+    environment: DEV
+    
+  billing:
+    enabled: true
+    chargify:
+      api_key: ''
+      site_name: ''
+      
+  dns:
+    mysql: 
+      user: 'scalr'
+      pass: 'scalr'
+      host: 'localhost'
+      name: 'scalr'
+    global:
+      enabled: true
+      nameservers: ['ns1.example.net', 'ns2.example.net', 'ns3.example.net', 'ns4.example.net']
+    static:
+      enabled: true
+      nameservers: ['ns1.example-dns.net', 'ns2.example-dns.net']
+      domain_name: 'example-dns.net'
+      
+  msg_sender:
+    connections: 
+      mysql:
+        <<: *connections_mysql
+        driver: 'mysql+pymysql'
+        pool_recycle: 120
+        pool_size: 10
+    pool_size: 10
+    log_file: "/var/log/scalr.messaging.log"
+    pid_file: "/var/run/scalr.messaging.pid"
+
+  stats_poller:
+    connections: 
+      mysql:
+        <<: *connections_mysql
+        driver: 'mysql+pymysql'
+        pool_recycle: 120
+        pool_size: 4
+    metrics: ['cpu', 'la', 'mem', 'net']
+    farm_procs: 2
+    serv_thrds: 35
+    rrd_thrds: 2
+    rrd_db_dir: '/tmp/rrd_db_dir'
+    log_file: '/var/log/scalr.stats-poller.log'
+    pid_file: '/var/run/scalr.stats-poller.pid'
+
